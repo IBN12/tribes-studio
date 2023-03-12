@@ -16,40 +16,36 @@ body{
 /* @font-face 1 - Display Magazine */
 @font-face{
     font-family: display-magazine;
-    /* src: url(../dist/fonts/display-magazine/Display\ Magazine.ttf); */
-    /* src: url(../dist/fonts/Display\ Magazine.ttf); */
-    src: url('../src/fonts/display_magazine/Display\ Magazine.ttf');
+    /* src: url('../src/fonts/display_magazine/Display\ Magazine.ttf'); */
+    src: url(./display-magazine/Display\ Magazine.ttf);
 } 
 
 /* @font-face-2 - Army of Darkness */
 @font-face{
     font-family: army-of-darkness;
-    /* src: url(../dist/fonts/army-of-darkness/ARMYD___.TTF); */
-    /* src: url(../dist/fonts/ARMYD___.TTF); */
-    src: url('../src/fonts/army_of_darkness/ARMYD___.TTF');
+    /* src: url('../src/fonts/army_of_darkness/ARMYD___.TTF'); */
+    src: url(./army-of-darkness/ARMYD___.TTF);
 }
 
 /* @font-face-3 - Morena */
 @font-face{
     font-family: morena;
-    /* src: url(../dist/fonts/morena/Morena.ttf); */
-    /* src: url(../dist/fonts/Morena.ttf); */
-    src: url('../src/fonts/morena/Morena.ttf');
+    /* src: url('../src/fonts/morena/Morena.ttf'); */
+    src: url(./morena/Morena.ttf);
 }
 
 /* @font-face-4 - There Brat */
 @font-face{
     font-family: there-brat;
-    /* src: url(../dist/fonts/there-brat/There\ Brat.ttf); */
-    src: url('../src/fonts/there_brat/There\ Brat.ttf');
+    /* src: url('../src/fonts/there_brat/There\ Brat.ttf'); */
+    src: url(./there-brat/There\ Brat.ttf);
 }
 
 /* @font-face-5 - Marxiana Elzevir */
 @font-face{
     font-family: marxiana-elzevir;
-    /* src: url(../dist/fonts/marxiana_elzevir/TT\ Marxiana\ Trial\ Elzevir.ttf); */
-    /* src: url(../dist/fonts/TT\ Marxiana\ Trial\ Elzevir.ttf); */
-    src: url('../src/fonts/marxiana_elzevir/TT\ Marxiana\ Trial\ Elzevir.ttf');
+    /* src: url('../src/fonts/marxiana_elzevir/TT\ Marxiana\ Trial\ Elzevir.ttf'); */
+    src: url(./marxiana-elzevir/TT\ Marxiana\ Trial\ Elzevir.ttf);
 }
 
 /***********************************************************************************************************************************************************/
