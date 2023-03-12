@@ -1,0 +1,385 @@
+/* body - Main body for the application browser. */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #171717;
+}
+
+/* * - All elements in the application. */
+*{
+    box-sizing: border-box;
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Fonts Section| */
+/* @font-face 1 - Display Magazine */
+@font-face{
+    font-family: display-magazine;
+    src: url(../dist/fonts/display-magazine/Display\ Magazine.ttf);
+} 
+
+/* @font-face-2 - Army of Darkness */
+@font-face{
+    font-family: army-of-darkness;
+    src: url(../dist/fonts/army-of-darkness/ARMYD___.TTF);
+}
+
+/* @font-face-3 - Morena */
+@font-face{
+    font-family: morena;
+    src: url(../dist/fonts/morena/Morena.ttf);
+}
+
+/* @font-face-4 - There Brat */
+@font-face{
+    font-family: there-brat;
+    src: url(../dist/fonts/there-brat/There\ Brat.ttf);
+}
+
+/* @font-face-5 - Marxiana Elzevir */
+@font-face{
+    font-family: marxiana-elzevir;
+    src: url(../dist/fonts/marxiana_elzevir/TT\ Marxiana\ Trial\ Elzevir.ttf);
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Content Section| */ 
+#content{
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Navigation Header Section| */ 
+.navigation-header{
+    display: grid;
+    grid-template-columns: 3fr repeat(6, 1fr);
+    /* justify-items: center; */
+    align-items: center;
+    gap: 5px;
+
+    border: 1px solid #d97706;
+    background-color: #d97706;
+    width: 100%;
+    height: 82px;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+}
+.navigation-header > div{
+    /* border: 1px solid lightgreen; */
+}
+.navigation-header > div button{
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #d97706;
+    border-radius: 10px;
+    padding: 0 40px 0 40px;
+    background-color: #d97706;
+    color: white;
+    font-family: there-brat, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.navigation-header > div button:hover{
+    background-color:#ef4444;
+}
+/* .navigation-header > div:nth-child(1){
+    width: 200px;
+    height: 200px;
+}
+.navigation-header > div:nth-child(1) img[src]{
+    width: 100%;
+    height: 100%;
+} */
+
+.mobile-navigation-header{
+    display: none;
+}
+
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Main Header Section| */
+.main-header{
+    /* border: 2px solid orange; */
+    height: 1300px;
+}
+
+/* Main Header | Home Page */
+.main-header img[src]{
+    width: 100%;
+    height: 100%;
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Main Content Section| */
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+
+    /* border: 2px solid aqua; */
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.main-content > div{
+    /* border: 1px solid green; */
+}
+
+/* Main Content | Home Page */
+.main-content-col-one{
+    /* border: 1px solid pink; */
+    text-align: center;
+}
+.main-content-col-one > div{
+    color: white;
+    font-family: there-brat, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+.main-content-col-one button{
+    font-family: there-brat, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 25px;
+    padding: 12px 15px 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    cursor: pointer;
+    background-color:#262626;
+    color: white;
+    display: block;
+    margin: 20px auto;
+}
+.main-content-col-one button:hover{
+    background-color: #171717;
+    border: 1px solid #171717;
+}
+
+/* Main Content Column Two */
+.main-content-col-two{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+    padding: 10px;
+    color: white;
+}
+.main-content-col-two > div{
+    border: 1px solid #262626;
+    border-radius: 10px;
+    background-color: #262626;
+    padding:5px;
+}
+.main-content-col-two > div:nth-child(1){
+    grid-column: 1 / 3;
+
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-family: there-brat, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Inside each item for main content column two. */
+.main-content-col-two > div > div{
+    /* border: 1px solid red; */
+    padding: 10px;
+    font-family: marxiana-elzevir, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.news-developer-preview{
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    font-family: army-of-darkness, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 3px;
+    color: white;
+    background-color: #171717;
+    border: 1px solid #171717;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.news-developer-preview:hover{
+    background-color: #262626;
+    border: 1px solid #262626;
+}
+
+.news-tribes-plus{
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    font-family: there-brat, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 3px; 
+    color: white;
+    cursor: pointer;
+    background-color: #171717;
+    border: 1px solid #171717;
+    border-radius: 10px;
+}
+.news-tribes-plus:hover{
+    background-color: #262626;
+    border: 1px solid #262626;
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Main Footer Section| */
+.main-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+    /* border: 2px solid yellow; */
+    background-color: #d97706;
+    padding: 20px;
+    color: white;
+}
+.main-footer > div{
+    /* border: 1px solid #262626; */
+    border: 1px solid #f59e0b;
+    border-radius: 10px;
+    /* background-color: #262626; */
+    background-color: #f59e0b;
+}
+.main-footer > div:nth-child(1){
+    grid-column: 1 / 3;
+
+    text-align: center;
+    font-family: there-brat, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Temp Header Section| */
+.temp-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+
+    color: white;
+    text-align: center;
+    /* border: 2px solid blue; */
+    width: 600px;
+    position: absolute;
+    bottom: 70%;
+    left: 5%;
+}
+.temp-header > div{
+    /* border: 1px solid yellow; */
+}
+
+/* Temp Header | Home Page */
+.temp-header > div:nth-child(1){
+    font-family: army-of-darkness, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight:bold;
+}
+.temp-header > div:nth-child(2){
+    font-family: morena, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: bold;
+}
+.temp-header > div:nth-child(3) button{
+    padding: 12px 15px 12px 15px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+    font-family: Morena, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: white;
+    font-weight: bold;
+}
+.temp-header > div:nth-child(3) button:hover{
+    background-color: #d1d5db38;
+    border-color: #d1d5db38;
+    outline: none;
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Current Module|*/
+.current-module{
+    background-color:#ef4444 !important;
+}
+
+/***********************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************/
+/* |Page Minimize and Mobile Section| */ 
+
+/* media-1 - For the general desktop minimization*/
+@media only screen and (max-width: 1595px){
+    /* Mobile Navigation Header */
+    .navigation-header{
+        display: none;
+    }
+    .mobile-navigation-header{
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: 40px;
+        gap: 2px;
+
+        border: 1px solid #d97706;
+        background-color: #d97706;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        text-align: center;
+        z-index: 2;
+    }
+    .mobile-navigation-header > div{
+        /* border: 1px solid lightgreen; */
+    }
+
+    /* Mobile Navigation Header Item One - The Dropdown */
+    .mobile-navigation-header > div img[src]{
+        /* border: 3px solid orange; */
+        height: 100%;
+        cursor: pointer;
+    }
+    .mobile-drop-down-menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: left;
+        gap: 20px;
+
+        position: relative;
+        background-color: #d977067a;
+        width: 350px;
+        padding: 20px;
+        box-shadow: 1px 1px 6px 4px #d977067a;
+        top: 17px; 
+        right: 21px;
+    }
+    .mobile-drop-down-menu > div {
+        /* border: 1px solid gold; */
+    }
+    .mobile-drop-down-menu > div button{
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        background-color: #d9770600;
+        font-family: there-brat, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        padding: 0 40px 0 40px;
+        border-radius: 10px;
+        border: 1px solid #d9770600;
+    }
+    .mobile-drop-down-menu > div button:hover{
+        background-color:#ef4444;
+    }
+}
+
+/* hide-window */
+.hide-window{
+    display: none;
+}
